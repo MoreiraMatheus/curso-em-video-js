@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando DOM</title>
+
+    <style>
+        body{
+            background-color: rgb(89, 89, 223);
+            color: white;
+            font: normal 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> com Javascript</p>
+    <p>oi/</p>
+    <p>tudo bem?</p>
+    <p>sim</p>
+    <div>clique em mim</div>
+    <script>
+        var titulo = document.getElementsByTagName('h1')[0]
+        var paragrafo = document.getElementsByTagName('p')[1]
+        var pzim = document.getElementsByTagName('p')[3]
+
+        titulo.style.background = 'green'
+        paragrafo.style.color = 'black'
+        pzim.style.background = 'yellow'
+        pzim.style.color = 'black'
+        pzim.style.height = '30px'
+        pzim.style.textAlign = 'center'
+        document.write(`o 4º paragrafo está escrito: ${pzim.innerText}`)
+    </script>
+</body>
+</html>
