@@ -15,7 +15,7 @@
 
     <section>
         <div >
-            <p>escolha um numero entre 0 e 100:</p>
+            <p>Escolha um numero entre 0 e 100:</p>
             <input type="number" name="" id="num">
             <input type="button" value="adicionar" onclick="adicionar()">
         </div>
@@ -24,7 +24,10 @@
             <select name="" id="select" size="7"></select>
         </div>
 
-        <input type="button" value="Analisar">
+        <input type="button" value="Analisar" onclick="analisar()">
+
+        <p id="resultado-title">Resultado:</p>
+        <div id="resultado"></div>
     </section>
 
     <footer>

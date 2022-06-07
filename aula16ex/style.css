@@ -32,6 +32,19 @@ select{
     width: 300px;
 }
 
+option{
+    padding-left: 3px;
+}
+
+#resultado-title{
+    margin-top: 5px;
+    display: none;
+}
+
+#resultado p{
+    font-size: 0.8em;
+}
+
 footer{
     margin-top: 30px;
     font-weight: 600;
